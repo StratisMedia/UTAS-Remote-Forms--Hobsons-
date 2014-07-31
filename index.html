@@ -62,7 +62,7 @@
 
 <!-- Date of Birth -->
 <div class="form-group">
-<div class="bfh-datepicker" name="DateOfBirth" id="dob" data-format="d/m/y">
+<div class="bfh-datepicker" name="DateOfBirth" type="text" id="dob" data-format="d/m/y">
 </div>
 </div>
 
@@ -337,8 +337,9 @@
 
 <!--Level of Study-->
 <div class="form-group">
-<select id="LevelOfStudy" name="LevelOfStudy" class="form-control" onchange="configureDropDownLists(this,'course')">
-	<option value="associate-degree-diploma-studies">Associate Degree/Diploma Studies</option>
+<select id="LevelOfStudy" name="LevelOfStudy" class="form-control" placeholder="Select your level of study" onchange="configureDropDownLists(this,'course')">
+	<option value="aa1CHOOSELEVEL">Select your level of study</option>
+    <option value="associate-degree-diploma-studies">Associate Degree/Diploma Studies</option>
 	<option value="english-language-courses">English Language Courses</option>
 	<option value="foundation-studies">Foundation Studies</option>
 	<option value="postgraduate">Postgraduate</option>
@@ -348,7 +349,7 @@
 
 <!--Course-->
 <div class="form-group">
-<select id="course" name="course" class="form-control">
+<select id="course" name="course" class="form-control" placeholder="Select an option from above">
 </select>
 </div>
 
@@ -372,6 +373,7 @@
 </div>
 
 <input class="btn btn-primary" type="submit" value="Submit">
+<input class="btn btn-warning" type="reset">
 
 </fieldset>
 </form>
