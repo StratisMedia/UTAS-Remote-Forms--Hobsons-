@@ -32,7 +32,10 @@
 <div class="row">
 
 <form class="form-horizontal" role="form" id="UTAS" method="post" action="https://connect.prospectivestudent.info/UTas/">
+<!--<form class="form-horizontal" role="form" id="UTAS" method="post" action="http://posttestserver.com/post.php">-->
 <fieldset>
+ 
+
 
 <input data-val="true" data-val-length="The field Source must be a string with a maximum length of 1000." data-val-length-max="1000" id="Source" name="Source" type="hidden" value="Enquiry" />
 <input data-val="true" data-val-length="The field ReferralSource must be a string with a maximum length of 1000." data-val-length-max="1000" id="ReferralSource" name="ReferralSource" type="hidden" value="Website"/>
@@ -62,7 +65,7 @@
 
 <!-- Date of Birth -->
 <div class="form-group">
-<input class="bfh-datepicker" name="DateOfBirth" type="text" id="dob" data-format="d/m/y" value="">
+<input id="DateOfBirth" name="DateOfBirth" placeholder="DD/MM/YYYY" class="form-control" autofocus required>
 </input>
 </div>
 
@@ -355,15 +358,16 @@
 
 <!-- Where did you hear about us? -->
 <div class="form-group">
-<div class="bfh-selectbox" name="SurveyResponses.Question2" data-name="referalsource" placeholder="Where did you find us?">
-  <div data-value="1">Exhibition/Agent Events</div>
-  <div data-value="2">School Counsellor/Advisor</div>
-  <div data-value="3">Magazine/Newspaper</div>
-  <div data-value="4">UTAS Alumni</div>
-  <div data-value="5">Website</div>
-  <div data-value="6">Friend/Relative</div>
-  <div data-value="7">Other</div>
-</div>
+<select class="form-control"  name="SurveyResponses.Question2" placeholder="Where did you find us?">
+<option>Exhibition/Agent Events</option>
+<option>School Counsellor/Advisor</option>
+<option>Magazine/Newspaper</option>
+<option>UTAS Alumni</option>
+<option>Website</option>
+<option>Web Search</option>
+<option>Friend/Relative</option>
+<option>Other</option>
+</select>
 </div>
 
 
