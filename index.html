@@ -35,7 +35,7 @@ body {
 
 .row {
 	width: 95%;
-	margin-left: 2%;
+	margin-left: 2.5%;
 	text-align: center;
 }
 
@@ -71,6 +71,7 @@ legend {
 <!-- First Name-->
 <div class="form-group">
 	<div class="input-group">
+		<span class="input-group-addon"><span class="glyphicon glyphicon-user"></span></span>
 		<input id="fname" type="text" name="FirstName" placeholder="First Name" class="form-control" autofocus required/>
 		<span class="input-group-addon"><span class="glyphicon glyphicon-asterisk"></span></span>
 	</div>
@@ -80,6 +81,7 @@ legend {
 <!-- Last Name -->
 <div class="form-group">
 	<div class="input-group">
+	<span class="input-group-addon"><span class="glyphicon glyphicon-user"></span></span>
 	<input id="lname" type="text" name="LastName" placeholder="Last Name" class="form-control" autofocus required/>
 	<span class="input-group-addon"><span class="glyphicon glyphicon-asterisk"></span></span>
 	</div>
@@ -99,7 +101,8 @@ legend {
 <!-- Date of Birth -->
 <div class="form-group">
 	<div class="input-group">
-		<input id="DateOfBirth" name="DateOfBirth" placeholder="Date Of Birth - DD/MM/YYYY" class="form-control" autofocus required/>
+		<span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
+		<input id="DateOfBirth" name="DateOfBirth" placeholder="Date of Birth - DD/MM/YYYY" class="form-control" autofocus required/>
 		<span class="input-group-addon"><span class="glyphicon glyphicon-asterisk"></span></span>
 	</div>	
 </div>
@@ -114,6 +117,7 @@ legend {
 <!-- Country-->
 <div class="form-group">
 	<div class="input-group">
+	<span class="input-group-addon"><span class="glyphicon glyphicon-globe"></span></span>
 	<select class="form-control"  name="CountryOfCitizenship">
 		<option>Country</option>
 		<option value="AFG">Afghanistan</option>
@@ -373,13 +377,17 @@ legend {
 
 <!-- City/State -->
 <div class="form-group">
-<input id="citystate" name="SurveyResponses.Question1" type="text" placeholder="City/State" class="form-control">
+	<div class="input-group">
+	<span class="input-group-addon"><span class="glyphicon glyphicon-map-marker"></span></span>
+	<input id="citystate" name="SurveyResponses.Question1" type="text" placeholder="City/State" class="form-control">
+	</div>
 </div>
 
 
 <!--Level of Study-->
 <div class="form-group">
 	<div class="input-group">
+	<span class="input-group-addon"><span class="glyphicon glyphicon-sort"></span></span>
 	<select id="LevelOfStudy" name="LevelOfStudy" class="form-control" placeholder="Select your level of study" onchange="configureDropDownLists(this,'course')">
 		<option value="aa1CHOOSELEVEL">Select your level of study</option>
 		<option value="associate-degree-diploma-studies">Associate Degree/Diploma Studies</option>
@@ -394,29 +402,39 @@ legend {
 
 <!--Course-->
 <div class="form-group">
-<select id="course" name="course" class="form-control" placeholder="Select an option from above">
-</select>
+	<div class="input-group">
+		<span class="input-group-addon"><span class="glyphicon glyphicon-hand-right"></span></span>
+		<select id="course" name="course" class="form-control" placeholder="Select an option from above">
+			<option value="aa1CHOOSELEVEL">Select your course</option>
+		</select>
+	</div>
 </div>
 
 <!-- Where did you hear about us? -->
 <div class="form-group">
-<select class="form-control"  name="SurveyResponses.Question2" placeholder="Where did you find us?">
-<option>Where did you find us?</option>
-<option>Exhibition/Agent Events</option>
-<option>School Counsellor/Advisor</option>
-<option>Magazine/Newspaper</option>
-<option>UTAS Alumni</option>
-<option>Website</option>
-<option>Web Search</option>
-<option>Friend/Relative</option>
-<option>Other</option>
-</select>
+<div class="input-group">
+	<span class="input-group-addon"><span class="glyphicon glyphicon-eye-open"></span></span>
+	<select class="form-control"  name="SurveyResponses.Question2" placeholder="Where did you find us?">
+		<option>Where did you find us?</option>
+		<option>Exhibition/Agent Events</option>
+		<option>School Counsellor/Advisor</option>
+		<option>Magazine/Newspaper</option>
+		<option>UTAS Alumni</option>
+		<option>Website</option>
+		<option>Web Search</option>
+		<option>Friend/Relative</option>
+		<option>Other</option>
+	</select>
+</div>
 </div>
 
 
 <!-- What question would you like to ask -->
-<div class="form-group">        
-<textarea placeholder="What is your question?" name="SurveyResponses.Question3" class="form-control" rows="3"></textarea>
+<div class="form-group">  
+<div class="input-group">	
+	<span class="input-group-addon"><span class="glyphicon glyphicon-question-sign"></span></span>      
+	<textarea placeholder="What is your question?" name="SurveyResponses.Question3" class="form-control" rows="3"></textarea>
+</div>
 </div>
 
 <input class="btn btn-primary btn-lg" type="submit" value="Submit">
