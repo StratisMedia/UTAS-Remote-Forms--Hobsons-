@@ -389,7 +389,7 @@ legend {
 	<div class="input-group">
 	<span class="input-group-addon"><span class="glyphicon glyphicon-sort"></span></span>
 	<select id="LevelOfStudy" name="LevelOfStudy" class="form-control" placeholder="Select your level of study" onchange="configureDropDownLists(this,'course')">
-		<option value="aa1CHOOSELEVEL">Select your level of study</option>
+		<option value="aa1CHOOSELEVEL">Select Your Level of Study</option>
 		<option value="associate-degree-diploma-studies">Associate Degree/Diploma Studies</option>
 		<option value="english-language-courses">English Language Courses</option>
 		<option value="foundation-studies">Foundation Studies</option>
@@ -405,7 +405,7 @@ legend {
 	<div class="input-group">
 		<span class="input-group-addon"><span class="glyphicon glyphicon-hand-right"></span></span>
 		<select id="course" name="course" class="form-control" placeholder="Select an option from above">
-			<option value="aa1CHOOSELEVEL">Select your course</option>
+			<option value="aa1CHOOSELEVEL">Select Your Course</option>
 		</select>
 	</div>
 </div>
@@ -414,8 +414,8 @@ legend {
 <div class="form-group">
 <div class="input-group">
 	<span class="input-group-addon"><span class="glyphicon glyphicon-eye-open"></span></span>
-	<select class="form-control"  name="SurveyResponses.Question2" placeholder="Where did you find us?">
-		<option>Where did you find us?</option>
+	<select class="form-control"  name="SurveyResponses.Question2" placeholder="Where Did You Find Us?">
+		<option>Where Did You Find Us?</option>
 		<option>Exhibition/Agent Events</option>
 		<option>School Counsellor/Advisor</option>
 		<option>Magazine/Newspaper</option>
@@ -433,7 +433,7 @@ legend {
 <div class="form-group">  
 <div class="input-group">	
 	<span class="input-group-addon"><span class="glyphicon glyphicon-question-sign"></span></span>      
-	<textarea placeholder="What is your question?" name="SurveyResponses.Question3" class="form-control" rows="3"></textarea>
+	<textarea placeholder="What is Your Question?" name="SurveyResponses.Question3" class="form-control" rows="3"></textarea>
 </div>
 </div>
 
@@ -447,13 +447,13 @@ legend {
 
 <script type="text/javascript">
     function configureDropDownLists(LevelOfStudy,course) {
-        var diploma = new Array('Advanced Diploma of Applied Science (Nautical Science)', 'Advanced Diploma of Marine Engineering', 'Associate Degree in Applied Science - Marine Environment', 'Associate Degree in Aquaculture', 'Associate Degree in Arts', 'Associate Degree in Furniture Design', 'Associate Degree in General Studies', 'Associate Degree in Information & Communication Technology', 'Associate Degree in Maritime &amp; Logistics Management', 'Associate Degree in Music Studies', 'Associate Degree in Science', 'Diploma of Maritime and Logistics Management');
-		var diplomaval = new Array('301-advanced-diploma-of-applied-science-nautical-science','2-advanced-diploma-of-marine-engineering','4-associate-degree-in-applied-science-marine-environment','5-associate-degree-in-aquaculture','6-associate-degree-in-arts','7-associate-degree-in-furniture-design','8-associate-degree-in-general-studies','9-associate-degree-in-information-communication-technology','10-associate-degree-in-maritime-logistics-management','11-associate-degree-in-music-studies','12-associate-degree-in-science','3-diploma-of-maritime-and-logistics-management');
-		var englishval = new Array('1square','2circle','3triangle');
-        var english = new Array('Square', 'Circle', 'Triangle');
-        var foundation = new Array('John', 'David', 'Sarah');
-		var postgrad = new Array('test', 'test1');
-		var undergrad = new Array('test1', 'test2');
+        var diploma = new Array('Select Your Course','Advanced Diploma of Applied Science (Nautical Science)', 'Advanced Diploma of Marine Engineering', 'Associate Degree in Applied Science - Marine Environment', 'Associate Degree in Aquaculture', 'Associate Degree in Arts', 'Associate Degree in Furniture Design', 'Associate Degree in General Studies', 'Associate Degree in Information & Communication Technology', 'Associate Degree in Maritime &amp; Logistics Management', 'Associate Degree in Music Studies', 'Associate Degree in Science', 'Diploma of Maritime and Logistics Management');
+		var diplomaval = new Array('Select Your Course','301-advanced-diploma-of-applied-science-nautical-science','2-advanced-diploma-of-marine-engineering','4-associate-degree-in-applied-science-marine-environment','5-associate-degree-in-aquaculture','6-associate-degree-in-arts','7-associate-degree-in-furniture-design','8-associate-degree-in-general-studies','9-associate-degree-in-information-communication-technology','10-associate-degree-in-maritime-logistics-management','11-associate-degree-in-music-studies','12-associate-degree-in-science','3-diploma-of-maritime-and-logistics-management');
+		var englishval = new Array('Select Your Course','1square','2circle','3triangle');
+        var english = new Array('Select Your Course','Square', 'Circle', 'Triangle');
+        var foundation = new Array('Select Your Course','John', 'David', 'Sarah');
+		var postgrad = new Array('Select Your Course','test', 'test1');
+		var undergrad = new Array('Select Your Course','test1', 'test2');
 
         switch (LevelOfStudy.value) {
             case 'associate-degree-diploma-studies':
