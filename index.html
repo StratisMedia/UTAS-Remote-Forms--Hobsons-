@@ -50,6 +50,8 @@ option:first {
     color: #999;
 }
 
+
+
 </style>
 
 </head>
@@ -72,41 +74,41 @@ option:first {
 <legend>UTAS Enquiry Form</legend>
 
 <!-- First Name-->
-<div class="form-group">
+<div class="form-group has-feedback">
 	<div class="input-group">
 		<span class="input-group-addon"><span class="glyphicon glyphicon-user"></span></span>
 		<input id="fname" type="text" name="FirstName" placeholder="First Name" class="form-control" autofocus required/>
-		<span class="input-group-addon"><span class="glyphicon glyphicon-asterisk"></span></span>
+		<i class="glyphicon glyphicon-asterisk form-control-feedback"></i>
 	</div>
 </div>
 
 
 <!-- Last Name -->
-<div class="form-group">
+<div class="form-group has-feedback">
 	<div class="input-group">
 	<span class="input-group-addon"><span class="glyphicon glyphicon-user"></span></span>
 	<input id="lname" type="text" name="LastName" placeholder="Last Name" class="form-control" autofocus required/>
-	<span class="input-group-addon"><span class="glyphicon glyphicon-asterisk"></span></span>
+	<i class="glyphicon glyphicon-asterisk form-control-feedback"></i>
 	</div>
 </div>
 
 
 <!-- Email Address -->
-<div class="form-group">
+<div class="form-group has-feedback">
 	<div class="input-group">
 		<div class="input-group-addon">@</div>
 		<input id="email" name="EmailAddress" type="email" placeholder="Email" class="form-control" autofocus required/>
-		<span class="input-group-addon"><span class="glyphicon glyphicon-asterisk"></span></span>
+		<i class="glyphicon glyphicon-asterisk form-control-feedback"></i>
 	</div>
 </div>
 
 
 <!-- Date of Birth -->
-<div class="form-group">
+<div class="form-group has-feedback">
 	<div class="input-group">
 		<span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
 		<input id="DateOfBirth" name="DateOfBirth" placeholder="Date of Birth - DD/MM/YYYY" class="form-control" autofocus required/>
-		<span class="input-group-addon"><span class="glyphicon glyphicon-asterisk"></span></span>
+		<i class="glyphicon glyphicon-asterisk form-control-feedback"></i>
 	</div>	
 </div>
 
@@ -118,7 +120,7 @@ option:first {
 -->
 
 <!-- Country-->
-<div class="form-group">
+<div class="form-group has-feedback">
 	<div class="input-group">
 	<span class="input-group-addon"><span class="glyphicon glyphicon-globe"></span></span>
 	<select class="form-control"  name="CountryOfCitizenship">
@@ -374,7 +376,7 @@ option:first {
 		<option value="ZWE">Zimbabwe</option>
 		<option value="ALA">&#197;land Islands</option>
 	</select>
-	<span class="input-group-addon"><span class="glyphicon glyphicon-asterisk"></span></span>
+	<i class="glyphicon glyphicon-asterisk form-control-feedback"></i>
 	</div>
 </div>
 
@@ -388,7 +390,7 @@ option:first {
 
 
 <!--Level of Study-->
-<div class="form-group">
+<div class="form-group has-feedback">
 	<div class="input-group">
 	<span class="input-group-addon"><span class="glyphicon glyphicon-sort"></span></span>
 	<select id="LevelOfStudy" name="LevelOfStudy" class="form-control" placeholder="Select your level of study" onchange="configureDropDownLists(this,'course')">
@@ -399,7 +401,7 @@ option:first {
 		<option value="postgraduate">Postgraduate</option>
 		<option value="undergraduate">Undergraduate</option>
 	</select>
-	<span class="input-group-addon"><span class="glyphicon glyphicon-asterisk"></span></span>
+	<i class="glyphicon glyphicon-asterisk form-control-feedback"></i>
 	</div>
 </div>
 
