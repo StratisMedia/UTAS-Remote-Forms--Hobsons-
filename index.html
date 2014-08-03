@@ -74,6 +74,7 @@ option:first {
 button {
 	margin: 7px;
 }
+
 </style>
 
 </head>
@@ -84,11 +85,7 @@ button {
 
 <div class="row">
 
-<form class="form-horizontal" role="form" id="UTAS" method="post" action="https://connect.prospectivestudent.info/UTas/"
-	data-bv-message="This value is not valid"
-    data-bv-feedbackicons-valid="glyphicon glyphicon-ok"
-    data-bv-feedbackicons-invalid="glyphicon glyphicon-remove"
-    data-bv-feedbackicons-validating="glyphicon glyphicon-refresh">
+<form class="form-horizontal" role="form" id="UTAS" method="post" action="https://connect.prospectivestudent.info/UTas/">
 <!--<form class="form-horizontal" role="form" id="UTAS" method="post" action="http://posttestserver.com/post.php">-->
 <fieldset>
  
@@ -106,11 +103,9 @@ button {
 
 <!-- First Name-->
 <div class="form-group has-feedback">
-	<div class="input-group">
+	<div class="input-group" >
 		<span class="input-group-addon"><span class="glyphicon glyphicon-user"></span></span>
-		<input id="fname" type="text" name="FirstName" placeholder="First Name" class="form-control" autofocus 
-				data-bv-notempty="true"
-                data-bv-notempty-message="The first name is required and cannot be empty"/>
+		<input id="fname" type="text" name="FirstName" placeholder="First Name" class="form-control" autofocus/>
 		<i class="glyphicon glyphicon-asterisk form-control-feedback"></i>
 	</div>
 </div>
@@ -550,7 +545,73 @@ button {
 <!--- Bootstrap Validator Script -->
 <script>
 $(document).ready(function() {
-    $('#UTAS').bootstrapValidator();
+    $('#UTAS').bootstrapValidator({
+        feedbackIcons: {
+            valid: 'glyphicon glyphicon-ok',
+            invalid: 'glyphicon glyphicon-remove',
+            validating: 'glyphicon glyphicon-refresh'
+        },
+        fields: {
+            FirstName: {
+                validators: {
+                    notEmpty: {
+                        message: 'Your first name is required and cannot be empty'
+                    },
+                    regexp: {
+                        regexp: /^[a-zA-Z]+$/,
+                        message: 'Your first name can only consist of letters'
+                    }
+                }
+            },
+           LastName: {
+                validators: {
+                    validators: {
+                    notEmpty: {
+                        message: 'Your first name is required and cannot be empty'
+                    },
+                    regexp: {
+                        regexp: /^[a-zA-Z]+$/,
+                        message: 'Your first name can only consist of letters'
+                    }
+                }
+            },
+            EmailAddress: {
+                validators: {
+                    notEmpty: {
+                        message: 'Your email is required and cannot be empty'
+                    },
+                   emailAddress: {
+                        message: 'The value is not a valid email address'
+                	} 
+            	}
+            },
+            DateOfBirth: {
+                validators: {
+                    notEmpty: {
+                        message: 'The date of birth is required'
+                    },
+                    date: {
+                        format: 'DD/MM/YYYY',
+                        message: 'The date of birth is not valid'
+                    }
+                }
+            },
+             CountryOfCitizenship: {
+                validators: {
+                    notEmpty: {
+                        message: 'Please choose your country'
+                    },
+                }
+            },
+            LevelOfStudy: {
+                validators: {
+                    notEmpty: {
+                        message: 'Please select your level of study'
+                    }
+                }
+            }
+        }
+    });
 });
 </script>
 
